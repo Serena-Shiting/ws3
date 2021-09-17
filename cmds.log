@@ -1,0 +1,557 @@
+    1  passwd
+    2  $ wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv
+    3  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    4  ls
+    5  ls -latr
+    6  ls -altr
+    7  find ./ -type f -name “*.txt”
+    8  ls
+    9  vi tempfile
+   10  ls
+   11  gzip -d amazon_reviews_us_Books_v1_02.tsv.gz 
+   12  ls
+   13  wc amazon
+   14  wc amazon_reviews_us_Books_v1_02.tsv 
+   15  grep john amazon_reviews_us_Books_v1_02.tsv 
+   16  grep -i John amazon_reviews_us_Books_v1_02.tsv 
+   17  clear
+   18  grep verified amazon_reviews_us_Books_v1_02.tsv 
+   19  cut -d'   ' -f12 amazon_reviews_us_Books_v1_02.tsv
+   20  awk -F"\t" '{print $12}' amazon_reviews_us_Books_v1_02.tsv
+   21  awk -F"\t" '{print $12}' amazon_reviews_us_Books_v1_02.tsv > verified.txt
+   22  ls
+   23  cut -d'   ' -f12 amazon_reviews_us_Books_v1_02.tsv
+   24  cut -d'	' -f12 amazon_reviews_us_Books_v1_02.tsv
+   25  ls
+   26  head -n 2
+   27  head -n 2 amazon_reviews_us_Books_v1_02.tsv 
+   28  ls
+   29  grep Y verified.txt 
+   30  grep Y verified.txt > unverified.txt 
+   31  ls
+   32  wc verified.txt 
+   33  grep Y verified.txt > Yverfied.txt
+   34  grep N verified.txt  > Nverfied.txt
+   35  wc Yverfied.txt 
+   36  wc Yverfied.txt > count.txt
+   37  wc Nverfied.txt >> count.txt
+   38  cat count.txt 
+   39  nano count.txt 
+   40  history > cmds.log
+   41  vi cmds.log
+   42  emacs cmds.log
+   43  git init
+   44  git status
+   45  git add counts.txt
+   46  count.txt
+   47  git add count.txt 
+   48  git add cmds.log
+   49  git status
+   50  git commit -m"add two files
+   51  "
+   52  git commit -m"add two files"
+   53  git config --global user.email "shiting.li@sjsu.edu"
+   54  git config --global user.name "Shiting.li"
+   55  git commit -m"add two files"
+   56  git remote add origin https://github.com/Serena-Shiting/ws2.git
+   57  git branch -M main
+   58  git push -u origin main
+   59  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
+   60  git push
+   61  git log
+   62  git push origin
+   63  git push main
+   64  git branch
+   65  ~/.git-credentials
+   66  git remote set-url
+   67  git remote set-url https://github.com/Serena-Shiting/ws2.git
+   68  git remote rm origin
+   69  git remote add origin https://github.com/Serena-Shiting/ws2.git
+   70  git push origin
+   71  git push --set-upstream origin main
+   72  ls
+   73  man head
+   74  head -n 2 amazon_reviews_us_Books_v1_02.tsv 
+   75  ls
+   76  script a1.txt
+   77  less a1.txt 
+   78  vi a1.txt 
+   79  ls
+   80  git init
+   81  git add a1.txt
+   82  git commit -m"add a1"
+   83  git remote add origin https://github.com/Serena-Shiting/a1.git
+   84  git branch -M main
+   85  git push -u origin main
+   86  git log
+   87  history > cmds.log
+   88  ls
+   89  less cmds
+   90  less cmds.log 
+   91  cd ..
+   92  echo $home
+   93  ls
+   94  less instr1
+   95  cd lis
+   96  ls
+   97  echo $home
+   98  echo $HOME
+   99  `pwd`
+  100  vi ~/.bashrc
+  101  source ~/.bashrc
+  102  lll
+  103  source ~/.bashrc
+  104  lll
+  105  . source ~/.bashrc
+  106  .source ~/.bashrc
+  107  vi ~/.bashrc
+  108  .source ~/.bashrc
+  109  source ~/.bashrc
+  110  .~/.bashrc
+  111  . ~/.bashrc
+  112  grep shopt~/.bashrc
+  113  grep shopt ~/.bashrc
+  114  echo $lis
+  115  echo $UID
+  116  echo$GROUP
+  117  echo $GROUP
+  118  $ groups
+  119  groups
+  120  crontab -1
+  121  crontab -l
+  122  crontab-l
+  123  crontab -l
+  124  mkdir temp
+  125  cd temp
+  126  mkdir 1.txt
+  127  chmod man
+  128  chmod --help
+  129  chomd au-x temp
+  130  chmod au-x temp
+  131  cd..
+  132  cd ..
+  133  chmod au-x temp
+  134  ls
+  135  cd temp
+  136  ls -l
+  137  chmod au-rwx temp
+  138  cd temp
+  139  mkdir temp2
+  140  cd temp2
+  141  cd //
+  142  cd ..
+  143  cd..
+  144  cd ..
+  145  cd ~
+  146  mv temp2
+  147  mv --help
+  148  mv temp2 temp1
+  149  ls
+  150  cp 1.txt temp1
+  151  cp a1.txt temp1
+  152  cd temp1
+  153  ls
+  154  cd ~
+  155  cp temp temp1
+  156  mkdir temp3
+  157  cp temp3 temp2
+  158  cp -R temp3/*temp1
+  159  cp -R temp3/* temp1
+  160  $ echo $HOME
+  161  echo $HOME
+  162  echo $UID
+  163  groups
+  164  mkdir temp
+  165  chmod au-x temp
+  166  cd temp
+  167  cd  /proc/
+  168  ls
+  169  less meminfo
+  170  less cpuinfo
+  171  cd~
+  172  cd ~
+  173  script a1.txt
+  174  less a1.txt
+  175  history > cmds.log
+  176  less cmds.log
+  177  ls
+  178  git init
+  179  add cmds.log
+  180  git add cmds.log
+  181  commit m-"command history"
+  182  git commit -m"command history"
+  183  git remote add origin https://github.com/Serena-Shiting/ws1.git
+  184  git branch -M main
+  185  git push -u origin main
+  186  git checkout master
+  187  git branch
+  188  git push
+  189  mkdir ws1
+  190  cd ws1
+  191  git init
+  192  git add cmds.log
+  193  history > cmds.log
+  194  git add cmds.log
+  195  git commit -m"command history"
+  196  git remote add origin https://github.com/Serena-Shiting/ws1.git
+  197  git push origin master
+  198  rsync -ary temp2 temp1
+  199  ls
+  200  rsync -ary temp3 temp1
+  201  echo $?
+  202  ls
+  203  cd /proc/
+  204  ls
+  205  head meminfo
+  206  tail cpuinfo
+  207  cd ~
+  208  LS
+  209  ls
+  210  ls-lh
+  211  ls -lh
+  212  ls -a
+  213  cd ..
+  214  ls -a
+  215  cd instr1/
+  216  ls -a
+  217  cd ..
+  218  cd
+  219  hk
+  220  hea
+  221  history
+  222  man find
+  223  find amazon_reviews_us_Books_v1_02.tsv.gz
+  224  history
+  225  man wget
+  226  mkdir amazon_file
+  227  ls -a
+  228  cd temp
+  229  cd ws1
+  230  ls -a
+  231  cd ..
+  232  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  233  ls -a
+  234  ls -lh
+  235  clear
+  236  man wc
+  237  man grep
+  238  grep great amazon_reviews_us_Books_v1_02.tsv
+  239  history
+  240  vi amazon_reviews_us_Books_v1_02.tsv
+  241  clear
+  242  head n-1
+  243  head amazon_reviews_us_Books_v1_02.tsv n-1
+  244  history
+  245  head -n 2 amazon_reviews_us_Books_v1_02.tsv
+  246  history
+  247  awk -F"\t" '{print $14}' amazon_reviews_us_Books_v1_02.tsv > review.txt
+  248  grep great review.txt > great_result.txt
+  249  nano great_result.txt 
+  250  grep -c great review.txt
+  251  man grep
+  252  grep /n review.txt
+  253  clear
+  254  grep -c /n review.txt
+  255  man grep
+  256  grep -i great review.txt > great_result.txt
+  257  ls -a
+  258  grep -i great review.txt > great_result.txt
+  259  grep -c /n great_result.txt
+  260  echo $HOME
+  261  echo 
+  262  echo $UID
+  263  groups
+  264  mkdir temp
+  265  rmdir temp
+  266  rmdir -r temp
+  267  mam redir
+  268  man rmdir
+  269  rm -rf temp
+  270  rm -f temp
+  271  cd temp
+  272  chmod augo+rwx temp
+  273  cd temp
+  274  ls
+  275  rm 1.txt/
+  276  rmdir 1.txt/
+  277  ls
+  278  cd..
+  279  cd ..
+  280  rmdir temp
+  281  cd /proc/
+  282  ls
+  283  head meminfo
+  284  tail cpuinfo
+  285  cd ~
+  286  ls -lh
+  287  echo $HOME
+  288  echo $UID
+  289  groups
+  290  mkdir temp
+  291  chmod au-x temp
+  292  cd temp
+  293  ls temp
+  294  ls -1 temp
+  295  echo $?
+  296  mv temp temp1
+  297  ls
+  298  cp temp1 tempCopy
+  299  cp -r temp1 temp1Copy
+  300  echo $?
+  301  cd /proc/
+  302  ls
+  303  head meminfo
+  304  tail cpuinfo
+  305  cd ~
+  306  ls -lh
+  307  head amazon_reviews_us_Books_v1_02.tsv n-1
+  308  head -n 2 amazon_reviews_us_Books_v1_02.tsv
+  309  awk -F"\t" '{print $14}' amazon_reviews_us_Books_v1_02.tsv > review.txt
+  310  grep -i great review.txt > great_result.txt
+  311  grep -c /n great_result.txt
+  312  history
+  313  ls
+  314  head amazon_reviews_us_Books_v1_02.tsv n-1
+  315  clear
+  316  script a1.txt
+  317  script 1.txt
+  318  echo $HOME
+  319  echo $UIS
+  320  echo $UID
+  321  groups
+  322  mkdir temp
+  323  chmod a -x
+  324  chmod a -x temp
+  325  chmod a-x temp
+  326  mkdir temp/1.txt
+  327  cd temp
+  328  ls temp
+  329  echo $?
+  330  ls -l temp
+  331  echo $?
+  332  mv temp newTemp
+  333  cp newTemp anotherTemp
+  334  rsync -ary temp/ anotherTemp/
+  335  rsync -ary temp anotherTemp
+  336  ls
+  337  rsync -ary temp/ temp2
+  338  cd temp
+  339  ls -latr
+  340  rsync -ary temp/ anotherTemp/
+  341  echo $?
+  342  ls
+  343  mkdir newTemp1
+  344  mkdir newTemp2
+  345  rsync -ary newtemp1/ newTemp2/
+  346  rm newTemp1
+  347  mv newTemp1
+  348  rmdir newTemp1
+  349  rmdir newTemp2
+  350  rmdir temp3
+  351  ls
+  352  rmdir temp1
+  353  rmdir anotherTemp/
+  354  ls
+  355  cp -r newTemp newTemp2
+  356  echo $?
+  357  cd /proc/
+  358  ls
+  359  head meminfo
+  360  tail cpuinfo
+  361  ls -lh
+  362  cd ..
+  363  ls -lh
+  364  ls
+  365  cd ..
+  366  cd home
+  367  ls -lh
+  368  cd lis
+  369  ls
+  370  ls -lh
+  371  head amazon_reviews_us_Books_v1_02.tsv n-1
+  372  echo $?
+  373  history
+  374  head -n 1 amazon_reviews_us_Books_v1_02.tsv 
+  375  awk -F"\t" '{print $14}' amazon_reviews_us_Books_v1_02.tsv > review.txt
+  376  grep -i great review.txt > great_result.txt
+  377  grep -c /n great_result.txt
+  378  less a1.txt
+  379  vi a1.txt 
+  380  less a1.txt 
+  381  script a1.txt
+  382  less a1.txt 
+  383  script a1.txt
+  384  less a1.txt 
+  385  rmdir temp
+  386  ls
+  387  rmdir newTemp
+  388  rmdir newTemp2
+  389  rmdir temp1
+  390  ls
+  391  cd temp1
+  392  ls
+  393  rm a1.txt
+  394  rmdir temp3
+  395  ls
+  396  cd ..
+  397  rmdir temp1
+  398  ls
+  399  script a1.txt
+  400  less a1.txt 
+  401  vi a1.txt 
+  402  less a1.txt 
+  403  ls
+  404  mkdir a1
+  405  ls
+  406  cd a1
+  407  git init
+  408  git add a1.txt
+  409  mv a1.txt a1
+  410  cd ..
+  411  mv a1.txt a1
+  412  cd la
+  413  cd a1
+  414  git add a1.txt
+  415  git commit -m"add a1.txt"
+  416  git remote add origin https://github.com/Serena-Shiting/a1.git
+  417  git branch -M main
+  418  git push -u origin main
+  419  script a2.txt
+  420  cd temp
+  421  ls
+  422  mkdir temp
+  423  chmod au-x temp
+  424  cd temp
+  425  awk -F"\t" '{print $2}' amazon_reviews_us_Books_v1_02.tsv > customer_id.txt
+  426  sudo nano customer_id.txt
+  427  nano customer_id.txt
+  428  cat customer_id.txt | uniq -c
+  429  cat customer_id.txt | uniq -c > id_result
+  430  nano id_result 
+  431  wc id_result 
+  432  wc -l id_result 
+  433  man sort
+  434  head id_result -n 2
+  435  cut id_result -d " " -f 1
+  436  cut id_result -d " " -f 1 | uniq 
+  437  nano id_result 
+  438  uniq id_result
+  439  sort id_result -n -k 1 | uniq > sorted_result
+  440  nano sorted_result 
+  441  man sort
+  442  sort id_result -n -k 1 -r | uniq > sorted_result
+  443  nano sorted_result 
+  444  ls
+  445  rm id_result 
+  446  rm customer_id.txt sorted_result 
+  447  ls
+  448  awk -F"\t" '{print $2}’ amazon_reviews_us_Books_v1_02.tsv > customer_id.txt
+  449  history
+  450  awk -F"\t" '{print $2}' amazon_reviews_us_Books_v1_02.tsv > customer_id.txt
+  451  cat customer_id.txt | uniq -c | sort -n -k 1 -r > final_result.txt
+  452  head final_result.txt -n 3
+  453  head amazon_reviews_us_Books_v1_02.tsv -n 1
+  454  head amazon_reviews_us_Books_v1_02.tsv -n 2
+  455  awk -F"\t" '{print $4}' amazon_reviews_us_Books_v1_02.tsv > product_id.txt
+  456  cat helpful.txt | sort > final_product.txt
+  457  head final_product.txt -n 3
+  458  awk -F"\t" '{print $9}' amazon_reviews_us_Books_v1_02.tsv > helpful.txt
+  459  vi helpful.txt 
+  460  cat helpful.txt | uniq -c | sort -n -k 2 -r > helpful_result.txt
+  461  vi helpful_result.txt 
+  462  cat helpful.txt | sort > helpful_result2.txt
+  463  vi helpful_result2.txt 
+  464  head helpful_result2.txt -n 3
+  465  cat helpful.txt | sort -r> helpful_result2.txt
+  466  head helpful_result2.txt -n 3
+  467  ls
+  468  head amazon_reviews_us_Books_v1_02.tsv -n 2
+  469  head amazon_reviews_us_Books_v1_02.tsv -n 3
+  470  man sort
+  471  man cut
+  472  man grep
+  473  man uniq
+  474  script ws3.txt
+  475  nano ws3.txt 
+  476  ls
+  477  head helpful_result.txt
+  478  head helpful_result2.txt
+  479  head helpful.txt
+  480  head -n 1 amazon_reviews_us_Books_v1_02.tsv
+  481  awk -F"\t" '{print $2}' amazon_reviews_us_Books_v1_02.tsv > customer_id.txt
+  482  cat customer_id.txt | uniq -c | sort -n -k 1 -r > result_c.txt
+  483  head result_c.txt -n 3
+  484  awk -F"\t" '{print $2}' amazon_reviews_us_Books_v1_02.tsv > customer_id.txt
+  485  cat product_id.txt | uniq -c | sort -n -k 1 -r > result_p.txt
+  486  clear
+  487  history
+  488  awk -F"\t" '{print $9}' amazon_reviews_us_Books_v1_02.tsv > helpful.txt
+  489  head helpful.txt -n 5
+  490  head helpful.txt -n 50
+  491  clear
+  492  history
+  493  cat helpful.txt | uniq -c > helpful_non_sorted.txt
+  494  nano helpful_non_sorted.txt 
+  495  man uniq
+  496  uniq helpful_non_sorted.txt > helpful_no_dup.txt
+  497  nano helpful_no_dup.txt 
+  498  cat helpful.txt | uniq > helpful_non_sorted.txt
+  499  nano helpful_non_sorted.txt 
+  500  cat helpful.txt > helpful_non_sorted.txt
+  501  helpful_non_sorted.txt 
+  502  man uniq
+  503  cat helpful.txt | uniq -c -u > helpful_non_sorted.txt
+  504  nano helpful_non_sorted.txt 
+  505  wc helpful_non_sorted.txt 
+  506  wc -l helpful_non_sorted.txt 
+  507  cat helpful.txt | uniq -c > helpful_non_sorted.txt
+  508  wc -l helpful_non_sorted.txt 
+  509  cat helpful.txt | uniq -u > helpful_non_sorted.txt
+  510  wc -l helpful_non_sorted.txt 
+  511  nano helpful_non_sorted.txt 
+  512  cat helpful.txt | uniq > helpful_non_sorted.txt
+  513  wc -l helpful_non_sorted.txt 
+  514  head helpful.txt -n 4
+  515  cut -d " " -f 9 > helpful.txt
+  516  cat amazon_reviews_us_Books_v1_02.tsv | cut -d " " -f 9 > helpful.txt
+  517  head helpful.txt -n 20
+  518  cat amazon_reviews_us_Books_v1_02.tsv | cut -d "/tab" -f 9 > helpful.txt
+  519  cat amazon_reviews_us_Books_v1_02.tsv | cut -d "\tab" -f 9 > helpful.txt
+  520  man cut
+  521  cat amazon_reviews_us_Books_v1_02.tsv | cut -d "\t" -f 9 > helpful.txt
+  522  man cut
+  523  cat amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > helpful.txt
+  524  nano helpful.txt
+  525  cat helpful.txt | uniq > no_dup_helpful
+  526  nano no_dup_helpful 
+  527  man sort
+  528  cat helpful.txt | sort | uniq -c > no_dup_helpful
+  529  nano no_dup_helpful 
+  530  cat helpful.txt | sort > sorted_helpful
+  531  nano sorted_helpful 
+  532  cat helpful.txt | sort -r > sorted_helpful
+  533  nano sorted_helpful 
+  534  man head
+  535  cat helpful.txt | sort | uniq -c > no_dup_helpful
+  536  nano no_dup_helpful 
+  537  clear
+  538  script ws3.txt
+  539  history
+  540  ls
+  541  rm sorted_helpful helpful.txt helpful_no_dup.txt helpful_result.txt 
+  542  ls
+  543  rm final_result.txt  review.txt  great_result.txt  helpful_non_sorted.txt helpful_result2.txt 
+  544  ls
+  545  1.txt customer_id.txt ws3.txt final_product.txt  no_dup_helpful
+  546  ls
+  547  rm 1.txt
+  548  ls
+  549  rm final_product.txt no_dup_helpful 
+  550  ls
+  551  rm customer_id.txt product_id.txt 
+  552  ls
+  553  rm ws3.txt 
+  554  ls
+  555  script ws3.txt
+  556  vi ws3.txt 
+  557  history > cmds.log

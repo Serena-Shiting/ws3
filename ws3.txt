@@ -1,0 +1,44 @@
+Script started on 2021-09-17 05:10:44+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+bash: alias: lll: not found
+bash: alias: =: not found
+bash: alias: ls -latr: not found
+bash: alias: p: not found
+bash: alias: =: not found
+bash: alias: /home/lis: not found
+]0;lis@f6linux11: ~[01;32mlis@f6linux11[00m:[01;34m~[00m$ head -n 1 amazon_reviews_us_Books_v1_02.tsv
+marketplace	customer_id	review_id	product_id	product_parent	product_title	product_category	star_rating	helpful_votes	total_votes	vine	verified_purchase	review_headline	review_body	review_date
+]0;lis@f6linux11: ~[01;32mlis@f6linux11[00m:[01;34m~[00m$ awk -F"\t" '{print $2}' amazon_reviews_us_Books_v1_02.tsv > customer_id.txt
+]0;lis@f6linux11: ~[01;32mlis@f6linux11[00m:[01;34m~[00m$ cat customer_id.txt | uniq -c | sort -n -k 1 -r > result_c.txt
+]0;lis@f6linux11: ~[01;32mlis@f6linux11[00m:[01;34m~[00m$ head result_c.txt -n 3
+      6 52948753
+      6 45041039
+      5 50732546
+(1) The above customer ID are the top 3 reviewers. 
+
+]0;lis@f6linux11: ~[01;32mlis@f6linux11[00m:[01;34m~[00m$ awk -F"\t" '{print $4}' amazon_reviews_us_Books_v1_02.tsv > product_id.txt
+]0;lis@f6linux11: ~[01;32mlis@f6linux11[00m:[01;34m~[00m$ cat product_id.txt | uniq -c | sort -n -k 1 -r > result_p.txt
+]0;lis@f6linux11: ~[01;32mlis@f6linux11[00m:[01;34m~[00m$ head result_p.txt -n 3
+     11 043935806X
+     10 0439139597
+      9 043935806X
+(2) The above products are the top 3 most reviewed products
+
+]0;lis@f6linux11: ~[01;32mlis@f6linux11[00m:[01;34m~[00m$ awk -F"\t" '{print $9}' amazon_reviews_us_Books_v1_02.tsv > helpful_votes.txt
+]0;lis@f6linux11: ~[01;32mlis@f6linux11[00m:[01;34m~[00m$ cat helpful_votes.txt | sort | uniq -c > result_h.txt
+]0;lis@f6linux11: ~[01;32mlis@f6linux11[00m:[01;34m~[00m$ cat helpful_votes.txt | sort | uniq -c > result_h.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk -F"\t" '{print $9}' amazon_reviews_us_Books_v1_02.tsv > helpful_votes.txt[A]0;lis@f6linux11: ~[01;32mlis@f6linux11[00m:[01;34m~[00m$ [41Phead result_p.txt -n 3
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@h[C[C[C[C[C[C[C[C[1P3[C[K 10
+ 459924 0
+ 408857 1
+  73994 10
+    410 100
+      1 1001
+      1 1005
+      1 1007
+    400 101
+      1 1012
+    388 102
+(3) The frequency of each helpfulness value is recorded in result_h.txt
+
+]0;lis@f6linux11: ~[01;32mlis@f6linux11[00m:[01;34m~[00m$ d[Kexit
+
+Script done on 2021-09-17 05:16:57+00:00 [COMMAND_EXIT_CODE="0"]
